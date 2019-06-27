@@ -5,15 +5,16 @@
     <title>title</title>
   </head>
   <body>
-    <h1>Pig Latinizer</h1>
-    <form action="/" method="post">
+    <h1>Pig Latinizer!</h1>
+    <form action="/piglatinize" method="post">
+    Enter your phrase:
     <p>
-    <label for="user_input">
-    Phrase to be Pig Latinized:
-    </label>
-    <input type="text" name="user_input" />
+    <textarea name="user_phrase"></textarea>
     </p>
-
+    <p>
+    <input id="submit" type="Submit">
+    </p>
+  </form>
   
   </body>
 </html>
