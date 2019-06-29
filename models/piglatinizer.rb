@@ -8,7 +8,6 @@ class PigLatinizer
   end
 
   def piglatinize_word(word)
-    new_end = "ay"
     if !consonant?(word[0])
       word = word + "w"
     elsif consonant?(word[0]) && consonant?(word[1]) && consonant?(word[2])
@@ -18,7 +17,7 @@ class PigLatinizer
     else
       word = word.slice(1..-1) + word.slice(0)
     end
-    word << new_end
+    word << "ay"
   end
 
   def piglatinize_sentence(sentence)
